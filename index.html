@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .header {
+      background: url('./1657252513302.jpeg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <h1>Bem-vindo ao Meu Portfólio</h1>
+    <p>Full Stack Dev | HTML | CSS | Javascript | React | Jest | Bootstrap | Node.js | Python | Git/Github | Linux |
+      Docker | MySQL</p>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Meu Portfólio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projetos">Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sobre Mim -->
+  <section id="sobre" class="container my-5">
+    <h2>Sobre Mim</h2>
+    <p>Olá sou o Othon Oliveira, um aficionado por tecnologia, sou comunicativo e estou sempre
+      disposto a me dedicar em novos aprendizados. Desenvolvi diversos projetos com Node.js,
+      React.js, Python, e utilizando bancos de dados MongoDB e SQL. Em adição a isso também
+      possuo sólido conhecimento em versionamento de código Git.</p>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="container my-5">
+    <h2>Meus Projetos</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="app-page-image.png" class="card-img-top" alt="Projeto 1">
+          <div class="card-body">
+            <h5 class="card-title">Amazon Scraper</h5>
+            <p class="card-text">Esta é uma aplicação de web scraper com frontend e backend. O frontend faz uma
+              requisição AJAX para o backend com o que você digitou, então o backend faz uma requisição axios para o
+              endpoint da Amazon com aquela palavra-chave específica do frontend. Então mostra os resultados na tela.
+            </p>
+            <a href="#" class="btn btn-primary">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="Screenshot 2024-09-22 185444.png" class="card-img-top" alt="Projeto 2">
+          <div class="card-body">
+            <h5 class="card-title">Jogo de Trivia</h5>
+            <p class="card-text">Jogo de perguntas e respostas, desenvolvido em Javascript utilizando React.js, CSS,
+              Bootstrap e Redux.</p>
+            <a href="#" class="btn btn-primary">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img
+            src="./68747470733a2f2f64726976652e676f6f676c652e636f6d2f75633f69643d3153575f6e6974355434782d686c707246736e684d67697872504a6d4b5a597468.jpeg"
+            class="card-img-top" alt="Projeto 3">
+          <div class="card-body">
+            <h5 class="card-title">Tetris Clone</h5>
+            <p class="card-text">Jogo clone de tetris, desenvolvido em python utilizando pygame.</p>
+            <a href="#" class="btn btn-primary">Ver Projeto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container my-5">
+    <h2>Contato</h2>
+    <form>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-light text-center py-3">
+    <p>&copy; <span id="anoAtual"></span> Meu Portfólio. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS e dependências -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script para definir o ano atual no rodapé -->
+  <script>
+    document.getElementById('anoAtual').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
